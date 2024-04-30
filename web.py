@@ -1,14 +1,17 @@
 import streamlit as st
 import functions
+
 todos = functions.get_todos()
 
+
 def add_todo():
-    todo = st.session_state['new_todo']
+    todo = st.session_state['new_todo'] + '\n'
     if todo.strip():  # Check if the input is not empty or whitespace only
         todos.append(todo)
         functions.write_todos(todos)
         st.session_state['new_todo'] = ''  # Clear the text input
         st.experimental_rerun()
+
 
 st.title('Lista de la compra de Ivan & Jessica')
 st.subheader('Lista de productos para próximo día')
