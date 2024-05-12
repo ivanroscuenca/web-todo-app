@@ -2,3 +2,5 @@ agua
 pan
 carne
 embutido
+salchichas
+pollo
