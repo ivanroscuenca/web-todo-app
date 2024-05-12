@@ -14,7 +14,7 @@ def get_list_fruteria():
             functionsbonarea.write_todos(todos)
             st.session_state['new_todo'] = ''  # Clear the text input
 
-    st.title('Lista de la compra BonArea')
+    st.title('Lista de la compra Frutería')
     st.subheader('Lista de productos para próximo día')
     st.write('Añadir productos en la lista')
     for i, todo in enumerate(todos):
